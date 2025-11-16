@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+
+  <title>Footer</title>
+
+  <style>
+    .foot-dv {
+      padding-top: 70px;
+      padding-bottom: 30px;
+      background-color: #003A5E;
+
+
+    }
+
+    footer {
+      z-index: 10;
+      position: relative;
+
+    }
+
+    .first-col .desc-ayed {
+      color: white;
+      font-family: 'cairo';
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .phone-foot .num-ayed {
+      color: white;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    .phone-foot .pho-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .social-foot {
+      display: flex;
+      list-style: none;
+      padding-right: 0px;
+      margin-top: 30px;
+
+    }
+
+    .social-foot .soc-icon {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .social-foot li:hover {
+
+
+      background-color: orange;
+    }
+
+
+    .social-foot li {
+      margin-left: 10px;
+      border: 2px solid white;
+      border-radius: 100px;
+    }
+
+    .tit-foot {
+      color: orange;
+      font-family: 'cairo';
+      margin-top: 40px;
+
+    }
+
+    .documn {
+      display: flex;
+      list-style: none;
+      padding-right: 0px;
+      margin-top: 20px;
+    }
+
+    .docc {
+      width: 60%;
+      margin-right: 30px;
+    }
+
+    .maroof {
+      width: 250px;
+    }
+
+    .tit-link-foot {
+      color: orange;
+      font-family: 'cairo';
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .links-foot {
+      list-style: none;
+      padding-right: 0px;
+      color: white;
+
+    }
+
+    .links-foot li {
+      margin-top: 5px;
+    }
+
+    .links-foot li a {
+      color: white;
+      text-decoration: none;
+      font-family: 'cairo';
+
+    }
+
+    .links-foot li a:hover {
+      color: orange;
+    }
+
+    .copy-right0 {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      background-color: #062e47;
+      font-family: 'cairo';
+    }
+
+    .cop-rght {
+      color: rgb(255, 255, 255);
+      margin-top: 15px;
+    }
+
+    .ayed {
+      color: orange;
+    }
+
+    .payment-meth {
+      display: flex;
+      list-style: none;
+      text-align: left;
+    }
+
+    .payment-meth li {
+
+      background-color: white;
+      margin-right: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 150px;
+      height: 60px;
+
+
+    }
+
+    .payment-meth li:hover {
+      animation: hoverTilt 0.5s ease-in-out forwards;
+    }
+
+    .payment-meth li img {
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      margin-top: 5px;
+    }
+
+    @keyframes hoverTilt {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(-6deg);
+      }
+
+      50% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(6deg);
+      }
+    }
+
+    :root {
+      --glass-bg: rgba(255, 255, 255, 0.12);
+      /* لون القاعدة */
+      --glass-border: rgba(255, 255, 255, 0.25);
+      --glass-accent: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+      --glass-shadow-outer: 0 1px 10px rgba(8, 15, 25, 0.45);
+      --glass-shadow-inner: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      --glass-radius: 16px;
+    }
+
+    .contac {
+      margin-top: 20px;
+      background-color: rgb(38, 110, 173);
+      padding: 10px;
+      border-radius: var(--glass-radius);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow-outer);
+    }
+
+    ul {
+      list-style: none;
+
+    }
+
+    .cont-icon {
+      width: 45px;
+      height: 45px;
+      margin-left: 20px;
+    }
+
+    .con-ul {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    .dat-ph {
+      color: white;
+      font-size: 16px;
+      margin-top: 10px;
+
+    }
+
+    .dat-p {
+      color: #003A5E;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    @media (max-width: 1400px) {
+      .dat-p {
+        display: none;
+      }
+
+      .contac {
+        display: none;
+      }
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="foot-dv" id="stars">
+    <footer>
+      <div class="container">
+        <!-- start first row -->
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="first-col">
+              <img src="images/logo_footer.webp" alt="logo ayed academy" class="img-fluid logo-img">
+              <p class="desc-ayed">نلتزم في أكاديمية عايد للتدريب بتقديم برامج تعليمية
+                وتدريبية عالية الجودة، تهدف إلى تطوير مهارات الطلاب
+                والمتدربين، ومساعدتهم على تحقيق التفوق في
+                الاختبارات الأكاديمية والمهنية. </p>
+
+              <ul class="social-foot">
+                <li><a href="https://www.tiktok.com/@ayedacademy?is_from_webapp=1&sender_device=pc" target="_blank"><img
+                      src="images/tiktok.svg" alt="" class="img-fluid soc-icon"></a></li>
+                <li><a href="https://web.facebook.com/p/Ayed-academy-61551884496569/?_rdc=1&_rdr" target="_blank"><img
+                      src="images/facebook.png" alt="" class="img-fluid soc-icon"></a>
+                </li>
+                <li><a href="https://www.instagram.com/ayed_academy/" target="_blank"><img src="images/instagram.png"
+                      alt="" class="img-fluid soc-icon"></a>
+                </li>
+                <li><a href="https://www.snapchat.com/@ayed_academy" target="_blank"><img src="images/snapchat.png"
+                      alt="" class="img-fluid soc-icon"></a>
+                </li>
+                <li><a href="https://t.me/ayed_acadmey" target="_blank"><img src="images/telegram.png" alt=""
+                      class="img-fluid soc-icon"></a>
+                </li>
+                <li><a href="https://x.com/Ayed_Academy" target="_blank"><img src="images/x.png" alt=""
+                      class="img-fluid soc-icon"></a></li>
+                <li><a href="https://www.youtube.com/@AyedAcademy" target="_blank"><img src="images/youtube.png" alt=""
+                      class="img-fluid soc-icon"></a></li>
+              </ul>
+              <br />
+              <hr />
+              <h4 class="tit-foot">موثقون لدى</h4>
+              <ul class="documn">
+                <li><img src="images/maroof.png" alt="" class="img-fluid maroof"></li>
+                <li><img src="images/Saudi-Authority-for-Intellectual-Property-1.webp" alt="" class="docc"></li>
+              </ul>
+
+            </div><!-- end first col -->
+          </div><!-- end first col-md-3 -->
+          <div class="col-lg-1">
+
+          </div><!-- end second column -->
+
+          <div class="col-lg-6">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <h4 class="tit-link-foot">الدعم والمساعدة </h4>
+                  <ul class="links-foot">
+                    <li><a href="">مركز المساعدة</a></li>
+                    <li><a href="">الأسئلة الشائعة</a></li>
+                    <li><a href="https://ayedacademy.co/privacy" target="_blank"> سياسة الخصوصية</a></li>
+                    <li><a href="https://ayedacademy.co/term" target="_blank">شروط الاستخدام</a></li>
+                    <li><a href="https://ayedacademy.co/term#" target="_blank"> سياسة الاسترجاع</a></li>
+                  </ul>
+                </div><!-- end lg 4 column -->
+                <div class="col-lg-4">
+                  <h4 class="tit-link-foot"> أقسام الدورات </h4>
+                  <ul class="links-foot">
+                    <li><a href="https://ayedacademy.co/courses/37" target="_blank"> دورة ستيب</a></li>
+                    <li><a href="https://ayedacademy.co/courses/86" target="_blank"> الدورات الطبية</a></li>
+                    <li><a href="https://ayedacademy.co/courses/74" target="_blank"> دورة الآيلتس</a></li>
+                    <li><a href="https://ayedacademy.co/courses/39" target="_blank"> دورة القدرات العامة</a></li>
+                    <li><a href="https://ayedacademy.co/courses/76" target="_blank"> دورة تأسيس اللغة الانجليزية</a>
+                    </li>
+                    <li><a href="https://ayedacademy.co/courses/40" target="_blank"> دورة قدرات الجامعيين</a></li>
+                  </ul>
+                </div><!-- end lg 4 column -->
+                <div class="col-lg-4">
+                  <h4 class="tit-link-foot"> &nbsp;&nbsp;&nbsp; </h4>
+                  <ul class="links-foot">
+                    <li><a href="https://ayedacademy.co/courses/43" target="_blank"> دورة التحصيلي</a></li>
+                    <li><a href="https://ayedacademy.co/courses/90" target="_blank"> دورات الاطفال</a></li>
+                    <li><a href="https://ayedacademy.co/courses/70" target="_blank"> دورات أرامكو</a></li>
+                    <li><a href="https://ayedacademy.co/courses/72" target="_blank"> دورة القدرات المعرفية</a></li>
+                    <li><a href="https://ayedacademy.co/courses/45" target="_blank"> دورات الرخصة المهنية تربوي</a></li>
+                    <li><a href="https://ayedacademy.co/courses/67" target="_blank"> دورات المقابلات الوظيفية</a></li>
+
+                  </ul>
+                </div><!-- end lg 4 column -->
+
+              </div><!-- end row -->
+
+              <div class="row">
+                <h4 class="tit-link-foot">أقسام الموقع </h4>
+                <div class="col-lg-4">
+                  <ul class="links-foot">
+                    <li><a href="https://ayedacademy.co/" target="_blank">الصفحة الرئيسية</a></li>
+                    <li><a href="https://ayedacademy.co/about" target="_blank"> صفحة من نحن</a></li>
+                  </ul>
+                </div><!-- end lg 4 -->
+                <div class="col-lg-4">
+                  <ul class="links-foot">
+                    <li><a href="https://ayedacademy.co/contact" target="_blank"> صفحة تواصل معنا</a></li>
+                    <li><a href="">صفحة المدونة</a></li>
+
+                  </ul>
+                </div><!-- end lg 4 -->
+                <div class="col-lg-4">
+                  <ul class="links-foot">
+                    <li><a href="https://ayedacademy.co/calculate-budget" target="_blank"> صفحة احسب موزونتك</a></li>
+                    <li><a href="https://ayedacademy.co/important-dates" target="_blank"> صفحة تواريخ تهمك</a></li>
+
+                  </ul>
+                </div><!-- end lg 4 -->
+              </div><!-- end part row-->
+
+              <div class="row contac tilt-light-box">
+                <div class="col-lg-4">
+                  <ul class="con-ul">
+                    <li><img src="images/customer-service.png" alt="" srcset="" class=" cont-icon"></li>
+                    <li class="dat-ph">920019606</li>
+                  </ul>
+                </div>
+                <div class="col-lg-1 dat-p">|</div>
+                <div class="col-lg-4">
+                  <ul class="con-ul">
+                    <li><img src="images/email (1).png" alt="" srcset="" class=" cont-icon"></li>
+                    <li class="dat-ph">info@ayedacademy.co</li>
+                  </ul>
+                </div>
+              </div><!-- end row contact us -->
+
+            </div><!-- end container -->
+          </div><!-- end lg 6 -->
+
+        </div><!-- end parent row -->
+
+      </div><!-- end container-->
+    </footer>
+  </div><!-- end start -->
+
+  <div class="copy-right0">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="cop-rght"> © 2004-2025 جميع الحقوق محفوظة لدى <span class="ayed">أكاديمية عايد</span> </p>
+        </div><!-- end right col -->
+        <div class="col-lg-6">
+
+          <ul class="payment-meth">
+            <li><img src="images/Al_Rajhi_Bank_Logo.svg.png" alt="" srcset="" class="img-fluid"></li>
+            <li><img src="images/SNB Logo Arabic.png" alt="" srcset="" class="img-fluid"
+                style="height: 30px !important;"></li>
+            <li><img src="images/namaa.png" alt="" srcset="" class="img-fluid"></li>
+            <li><img src="images/stc.png" alt="" srcset="" class="img-fluid"></li>
+          </ul>
+
+        </div><!-- end left col -->
+
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </div> <!-- end copy right -->
+
+
+  <script>
+    function createStarBackground(containerId) {
+      const container = document.getElementById(containerId);
+
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      container.appendChild(canvas);
+
+      function resize() {
+        canvas.width = container.clientWidth;
+        canvas.height = container.clientHeight;
+      }
+      resize();
+      window.addEventListener("resize", resize);
+
+      // إعدادات النجوم
+      const starsCount = 150;  // عدد النجوم
+      const stars = [];
+
+      for (let i = 0; i < starsCount; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          size: Math.random() * 2 + 0.5,
+          speed: Math.random() * 0.6 + 0.2  // سرعة خفيفة
+        });
+      }
+
+      function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        stars.forEach(star => {
+          ctx.beginPath();
+          ctx.fillStyle = "white";
+          ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+          ctx.fill();
+
+          // حركة النجوم
+          star.y += star.speed;
+
+          // لو خرج النجم من أسفل يرجع فوق
+          if (star.y > canvas.height) {
+            star.y = -2;
+            star.x = Math.random() * canvas.width;
+          }
+        });
+
+        requestAnimationFrame(drawStars);
+      }
+
+      drawStars();
+    }
+
+    createStarBackground("stars");
+
+
+    // animation phone and email section
+    const box = document.querySelector(".tilt-light-box");
+
+    box.addEventListener("mousemove", (e) => {
+      const rect = box.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const xPercent = (x / rect.width - 0.5) * 2;  // -1 إلى 1
+      const yPercent = (y / rect.height - 0.5) * 2;
+
+      const rotateX = -yPercent * 12;
+      const rotateY = xPercent * 12;
+
+      // إضاءة حول الديف
+      const shadowX = xPercent * 20; // تحريك الإضاءة يمين/يسار
+      const shadowY = yPercent * 20; // تحريك الإضاءة أعلى/أسفل
+
+      box.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      box.style.boxShadow = `
+    ${-shadowX}px ${-shadowY}px 30px rgba(255,255,255,0.2),
+    ${shadowX}px ${shadowY}px 60px rgba(255,255,255,0.2)
+  `;
+    });
+
+    // عند الخروج يرجع لوضعه الطبيعي
+    box.addEventListener("mouseleave", () => {
+      box.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+      box.style.boxShadow = "none";
+    });
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
